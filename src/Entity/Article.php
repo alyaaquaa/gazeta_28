@@ -33,6 +33,7 @@ class Article
     #[Gedmo\Timestampable(on: 'create')]
     private ?\DateTimeImmutable $createdAt = null;
 
+
     /**
      * Updated at.
      */
@@ -210,8 +211,8 @@ class Article
         return $this;
     }
 
-    
-    #[ORM\JoinColumn(nullable: false)]
-    #[ORM\ManyToOne(targetEntity: \App\Entity\User::class, inversedBy: 'articles')]
-    private $user;
+
+
+
+
 }

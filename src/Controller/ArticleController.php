@@ -61,6 +61,7 @@ class ArticleController extends AbstractController
     #[Route('/{id}', name: 'article_show', requirements: ['id' => '[1-9]\d*'], methods: 'GET')]
     public function show(Article $article): Response
     {
+
         return $this->render(
             'article/show.html.twig',
             ['article' => $article]
@@ -116,6 +117,7 @@ class ArticleController extends AbstractController
     #[Route('/{id}/edit', name: 'article_edit', requirements: ['id' => '[1-9]\d*'], methods: 'GET|PUT')]
     public function edit(Request $request, Article $article): Response
     {
+
         $form = $this->createForm(
             ArticleType::class,
             $article,

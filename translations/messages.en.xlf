@@ -119,10 +119,7 @@
         <source>title.article_edit</source>
         <target>Edit article</target>
       </trans-unit>
-      <trans-unit id="label.comment">
-        <source>label.comment</source>
-        <target>Comment</target>
-      </trans-unit>
+
 
       <trans-unit id="message.edited_successfully">
         <source>message.edited_successfully</source>
